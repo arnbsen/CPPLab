@@ -209,7 +209,7 @@ int main(){
     //Starting Prims Algorithm
     
     Prims.setInit(1); //Setting Souce vertex
-    
+    cout<<"The selction of vertices (-1) denotes start vertex"<<endl;
     while (!Prims.visitedAll()) {
         int m = Prims.findMinDist();
         Prims.visit(m);
