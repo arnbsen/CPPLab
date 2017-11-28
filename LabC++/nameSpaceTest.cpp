@@ -22,7 +22,7 @@ namespace TryNameSpace{
 int main(){
     cout<<"----Demonstration of Namespace----\n";
     
-    //Using keyword 'using to resolve naming colliions'
+    //Using keyword 'using' to resolve naming colliions
     using TryNameSpace::string;
     string b;
     b = (char *)"Using 'using' keyword to define scope\n";
