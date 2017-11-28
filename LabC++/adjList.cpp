@@ -67,6 +67,7 @@ public:
             temp1->next = new Node(v,w);
         }
     }
+    
 };
 int main(){
     AdjList adj;
