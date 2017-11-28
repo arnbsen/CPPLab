@@ -22,6 +22,7 @@ public:
     }
 };
 
+
 int main(){
     int a[100];
     cout<<"Enter the number of elements\n";
