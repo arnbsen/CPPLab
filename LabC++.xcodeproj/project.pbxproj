@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B0F0D7D1FCC9FB4003598E9 /* DLL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F0D7C1FCC9FB4003598E9 /* DLL.cpp */; };
+		4B4A966E1FCD5EF300E043C1 /* adjList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B4A966D1FCD5EF300E043C1 /* adjList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,7 @@
 		4B0F0D781FCC9693003598E9 /* QueuePtr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QueuePtr.cpp; sourceTree = "<group>"; };
 		4B0F0D7C1FCC9FB4003598E9 /* DLL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DLL.cpp; sourceTree = "<group>"; };
 		4B2CFC791F827AA100BCEE52 /* multipleinhertit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = multipleinhertit.cpp; sourceTree = "<group>"; };
+		4B4A966D1FCD5EF300E043C1 /* adjList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = adjList.cpp; sourceTree = "<group>"; };
 		4B6170A01FB629E6005BED35 /* stringRev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringRev.cpp; sourceTree = "<group>"; };
 		4B71B8D21FA3B77200DF81A6 /* letter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = letter.cpp; sourceTree = "<group>"; };
 		4B7DFF111F33779200073263 /* LabC++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LabC++"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +93,7 @@
 				4B0F0D751FCC90AC003598E9 /* stackptr.cpp */,
 				4B0F0D781FCC9693003598E9 /* QueuePtr.cpp */,
 				4B0F0D7C1FCC9FB4003598E9 /* DLL.cpp */,
+				4B4A966D1FCD5EF300E043C1 /* adjList.cpp */,
 			);
 			path = "LabC++";
 			sourceTree = "<group>";
@@ -154,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B0F0D7D1FCC9FB4003598E9 /* DLL.cpp in Sources */,
+				4B4A966E1FCD5EF300E043C1 /* adjList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
