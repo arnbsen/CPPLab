@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
-class DataNotFoundException{
+class DataNotFoundException{ //Creating an Exception class
     string msg;
     int errcode;
 public:
@@ -17,9 +17,10 @@ public:
         msg = a;
         errcode = e;
     }
-    void dispCause(){
-        cout<<"DataNotFoundException: "<<msg<<" with Error Code: "<<errcode<<endl;
+    void dispCause(){ //Error Message
+        cout<<msg<<" with Error Code: "<<errcode<<endl;
     }
+    operator char*(){ return (char*)"DataNotFoundException: ";} //Returning the object as an string to ostream
 };
 
 
@@ -41,11 +42,11 @@ int main(){
                 break;
             }
         }
-        if(i==n){
+        if(i==n){ //If item not found then it will throw an error
             throw DataNotFoundException("Item Was not found",1);
         }
     }catch(DataNotFoundException e){
-        
+        cout<<e;
         e.dispCause();
     }
 }
