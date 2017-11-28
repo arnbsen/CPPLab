@@ -21,6 +21,7 @@ public:
         cout<<"DataNotFoundException: "<<msg<<" with Error Code: "<<errcode<<endl;
     }
 };
+
 int main(){
     int a[100];
     cout<<"Enter the number of elements\n";
