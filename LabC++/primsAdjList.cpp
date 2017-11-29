@@ -183,6 +183,7 @@ int main(){
     Prims+9;
     
     //Adding adjcacent Nodes
+    //The problem was an undirected Graph so both edges are there v1--v2 and v2--v1
     Prims.addAdjNode(1, 2, 4);
     Prims.addAdjNode(2, 1, 4);
     Prims.addAdjNode(1, 8, 8);
