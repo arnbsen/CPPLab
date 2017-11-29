@@ -60,12 +60,12 @@ Fraction Fraction::operator--(){
 }
 Fraction Fraction::operator++(int i){
     Fraction* f = this;
-    this->operator+(Fraction());
+    *this = *this+Fraction();
     return *f;
 }
 Fraction Fraction::operator--(int i){
     Fraction* f = this;
-    this->operator+(Fraction());
+    *this = *this-Fraction();
     return *f;
 }
 bool Fraction::operator<(const Fraction f){
@@ -102,5 +102,16 @@ int main(){
     f1<<2;
     f1.disp();
     cout<<endl;
-   
+    f1++;
+    f1.disp();
+    cout<<endl;
+    ++f1;
+    f1.disp();
+    cout<<endl;
+    f1--;
+    f1.disp();
+    cout<<endl;
+    --f1;
+    f1.disp();
+    cout<<endl;
 }
