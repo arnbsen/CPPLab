@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B627B391FCE5AB800218C71 /* binSearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BBAF13F1FACC582007B8DAF /* binSearchTree.cpp */; };
+		4B627B541FCE734300218C71 /* templateLLsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B627B531FCE734300218C71 /* templateLLsort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +31,7 @@
 		4B2CFC791F827AA100BCEE52 /* multipleinhertit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = multipleinhertit.cpp; sourceTree = "<group>"; };
 		4B4A966D1FCD5EF300E043C1 /* adjList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = adjList.cpp; sourceTree = "<group>"; };
 		4B6170A01FB629E6005BED35 /* stringRev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringRev.cpp; sourceTree = "<group>"; };
+		4B627B531FCE734300218C71 /* templateLLsort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = templateLLsort.cpp; sourceTree = "<group>"; };
 		4B71B8D21FA3B77200DF81A6 /* letter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = letter.cpp; sourceTree = "<group>"; };
 		4B7DFF111F33779200073263 /* LabC++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LabC++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7DFF141F33779200073263 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				4BC2FF5D1FCDB8C500F35764 /* letterv1.cpp */,
 				4BC2FF5F1FCDBE5B00F35764 /* adjListtemplate.cpp */,
 				4B8C530A1FCDDD9000D353FB /* primsAdjList.cpp */,
+				4B627B531FCE734300218C71 /* templateLLsort.cpp */,
 			);
 			path = "LabC++";
 			sourceTree = "<group>";
@@ -168,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B627B391FCE5AB800218C71 /* binSearchTree.cpp in Sources */,
+				4B627B541FCE734300218C71 /* templateLLsort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
