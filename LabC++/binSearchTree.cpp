@@ -85,17 +85,16 @@ public:
         }else{
             if (head->left==NULL) {
                 BinTree* temp = head->right;
-                head = NULL;
+                delete head;
                 return temp;
             }else if (head->right == NULL){
                 BinTree* temp = head->left;
-                head = NULL;
+                delete head;
                 return temp;
             }
             BinTree* temp = head->right->minValueNode();
             head->item = temp->item;
             head->right = *head->right-(temp->item);
-            
             
         }
         return head;
@@ -122,13 +121,13 @@ int main(){
     BinTree* head = new BinTree(2); //Creating Root Node
     
     //Insertion
-    *head+2;
+    *head+14;
     *head+10;
     *head+6;
     *head+4;
     *head+8;
     *head+12;
-    
+    *head+2;
     //Traversals
     cout<<"Inorder Traversal"<<endl;
     head->inorder(head);
@@ -141,10 +140,10 @@ int main(){
     cout<<endl;
     
     //Search
-    head->search(2);
+    head->search(4);
     
     //Delete
-    *head-(10);
+    head = *head-(2); //Return Required if node to be deleted is head
     
     //Check
     cout<<"After deletion (Inorder): ";
