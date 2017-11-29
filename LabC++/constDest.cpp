@@ -12,10 +12,10 @@ using namespace std;
 class Fraction{
     int p;
     int q;
+     //~Fraction();
 public:
     Fraction();
     Fraction(int,int);
-    ~Fraction();
     Fraction operator++();
     Fraction operator++(int);
     Fraction operator--();
@@ -24,6 +24,7 @@ public:
     Fraction operator-(const Fraction);
     bool operator==(const Fraction);
     bool operator<(const Fraction);
+    Fraction operator<<(int);
     void disp();
 };
 Fraction::Fraction(){
@@ -34,9 +35,9 @@ Fraction::Fraction(int p1, int q1){
     p = p1;
     q = q1;
 }
-Fraction::~Fraction(){
-    cout<<"Destroying Fraction:  "<<p<<"/"<<q<<endl;
-}
+//Fraction::~Fraction(){
+//    cout<<"Destroying Fraction:  "<<p<<"/"<<q<<endl;
+//}
 Fraction Fraction::operator+(const Fraction f){
     Fraction ret;
     ret.p = this->p*f.q + this->q*f.p;
@@ -76,6 +77,10 @@ bool Fraction::operator==(const Fraction f){
 void Fraction::disp(){
     cout<<p<<"/"<<q;
 }
+Fraction Fraction::operator<<(int a){
+    this->p = this->p + a;
+    return *this;
+}
 int main(){
     Fraction f1(2,3),f2(4,5),f3(7,6),f4,f5(4,5);
     f1.disp();
@@ -94,9 +99,8 @@ int main(){
     if(f2==f5){
         f2.disp(); cout<<" is equal "<<endl;
     }
-    f1.~Fraction();
-    f2.~Fraction();
-    f3.~Fraction();
-    f4.~Fraction();
-    f5.~Fraction();
+    f1<<2;
+    f1.disp();
+    cout<<endl;
+   
 }
